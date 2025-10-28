@@ -14,8 +14,9 @@ treats_per_day = int(input("How many treats does your pet get per day? "))# Use 
 treats_per_week = treats_per_day * 7 # Convert to integer and calculate treats per week.
 
 # Replace the pet type.
-updated_description = f"{pet_name} is a {pet_age}-year-old {pet_type.replace("dog", "canine")}"# Use .replace() to modify pet type from "dog" to "canine".
-updated_description = f"{pet_name} is a {pet_age}-year-old {pet_type.replace("cat", "feline")}"# Use .replace() to modify pet type from "cat" to "feline".
+# updated_description = f"{pet_name} is a {pet_age}-year-old {pet_type.replace("dog", "canine")}"# Use .replace() to modify pet type from "dog" to "canine".
+# updated_description = f"{pet_name} is a {pet_age}-year-old {pet_type.replace("cat", "feline")}"# Use .replace() to modify pet type from "cat" to "feline".
+updated_description = pet_description.replace("cat", "feline").replace("dog", "canine")
 
 # Display a thank you message.
 thank_you_message = "Thanks for visiting! \nCome Again."# Add escape characters here.
